@@ -25,7 +25,7 @@ export default function Home() {
           <input onChange={FetchJson} ref={RefJson} type="file" name="" id="inputFile" accept='.json' className="border p-3 w-full hidden rounded-md border-blue-400 bg-blue-300" />
         </div>
         <div className="bg-slate-500 border border-slate-600 w-full min-h-[200px] text-sm rounded-lg p-3 shadow-md text-white font-bold">
-          <pre className="italic whitespace-pre-wrap w-full">{JSON.stringify(json, null, 2)}</pre>
+          <pre className="whitespace-pre-wrap w-full">{JSON.stringify(json, null, 2)}</pre>
         </div>
       </div>
   )
